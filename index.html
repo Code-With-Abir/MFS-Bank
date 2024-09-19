@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>PAyoo MFS</title>
+  </head>
+  <body>
+    <main class="flex justify-center lg:py-10 md:py-4 py-1">
+      <div class="mockup-phone">
+        <div class="camera"></div>
+        <div class="display">
+          <div class="artboard artboard-demo phone-1 bg-slate-100">
+            <!--! login -->
+            <div class="hero bg-slate-100 min-h-screen">
+              <div class="text-center">
+                <h1 class="text-5xl font-bold text-black">Login now!</h1>
+              </div>
+              <div class="hero-content flex-col lg:flex-row-reverse">
+                <div class="card bg-white w-full max-w-sm shrink-0 shadow-2xl">
+                  <form class="card-body">
+                    <div class="form-control">
+                      <label class="label">
+                        <span
+                          class="label-text font-semibold text-black text-md ml-1"
+                          >Mobile Number</span
+                        >
+                      </label>
+                      <input
+                        id="phoneNumber"
+                        type="number"
+                        placeholder="Enter Your Number"
+                        class="input input-bordered bg-white rounded-3xl text-sm"
+                        required
+                      />
+                    </div>
+                    <div class="form-control">
+                      <label class="label">
+                        <span
+                          class="label-text font-semibold text-black text-md ml-1"
+                          >4 Digit Pin</span
+                        >
+                      </label>
+                      <input
+                        id="pinNumber"
+                        type="password"
+                        placeholder="Enter 4 Digit Pin"
+                        class="input input-bordered bg-white rounded-3xl text-sm"
+                        autocomplete="off"
+                        required
+                      />
+                      <label class="label">
+                        <a
+                          href="#"
+                          class="label-text-alt link link-hover font-semibold ml-1 text-blue-800"
+                          >Forgot password?</a
+                        >
+                      </label>
+                    </div>
+                    <div class="form-control mt-6">
+                      <button
+                        id="loginButton"
+                        class="btn btn-primary rounded-3xl font-black text-white"
+                      >
+                        Login
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <!--! ---------- -->
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="./js/login.js"></script>
+  </body>
+</html>

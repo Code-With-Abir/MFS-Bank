@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>PAyoo MFS</title>
+  </head>
+  <body>
+    <main class="flex justify-center lg:py-10 md:py-4 py-1">
+      <div class="mockup-phone">
+        <div class="camera"></div>
+        <div class="display">
+          <div class="artboard artboard-demo phone-1 bg-slate-100">
+            <!--! Head -->
+            <div class="flex items-center w-[90%] mx- justify-between">
+              <!--! Available Balance -->
+              <div class="flex items-center bg-transparent outline-none">
+                <img
+                  src="./images/payoo.png"
+                  class="lg:w-[4vw] md:w-[5vw] w-[10vw]"
+                  alt=""
+                />
+                <div class="mx-4 ">
+                  <h1
+                    id="balance"
+                    class="font-black text-[13px] md:text-[18px] text-black"
+                  >
+                    80400
+                    <span class="text-[18px]">$</span>
+                  </h1>
+                  <p
+                    class="font-semibold text-[10px] md:text-[10px] text-gray-800"
+                  >
+                    Current Balance
+                  </p>
+                </div>
+              </div>
+              <!--* Available Balance -->
+              <button
+                id="logOut"
+                class="btn btn-sm bg-white border-none text-black hover:text-white"
+              >
+                <i class="fa fa-sign-out" aria-hidden="true"></i>Log Out
+              </button>
+            </div>
+            <!--*Head  -->
+
+            <!--! User Action BUtton -->
+            <div class="">
+              <button id="addMoney" class="btn btn-lg">Add Money</button>
+              <button id="cashOut" class="btn btn-lg">Cash Out</button>
+            </div>
+            <div class=""></div>
+            <!--* User Action BUtton -->
+            <!--! Add Money-->
+            <div id="addMoneyForm" class="card bg-state-100 w-full max-w-sm shrink-0 shadow-2xl  ">
+              <form class="card-body">
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text font-bold text-black"
+                      >Add Amount</span
+                    >
+                  </label>
+                  <input
+                    id="amountNumber"
+                    type="number"
+                    placeholder="Enter Amount"
+                    class="input input-bordered bg-transparent rounded-3xl"
+                    required
+                  />
+                </div>
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text font-bold text-black"
+                      >Pin Number</span
+                    >
+                  </label>
+                  <input
+                    id="pinNumber"
+                    type="password"
+                    placeholder="Enter Your Pin"
+                    class="input input-bordered bg-transparent rounded-3xl"
+                    required
+                  />
+                  <label class="label">
+                    <a
+                      href="#"
+                      class="label-text-alt link link-hover font-semibold ml-1 text-blue-800"
+                      >Forgot Pin Number?</a
+                    >
+                  </label>
+                </div>
+                <div class="form-control mt-6">
+                  <button
+                    id="addMoneyButton"
+                    class="btn btn-primary font-black text-white"
+                  >
+                    Add Money
+                  </button>
+                </div>
+              </form>
+            </div>
+            <!--* Add Money-->
+            <!--!Cash Out  -->
+            <div id="cashOutForm" class="card bg-state-100 w-full max-w-sm shrink-0 shadow-2xl hidden">
+              <form class="card-body">
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text font-bold text-black"
+                      >Cash Out</span
+                    >
+                  </label>
+                  <input
+                    id="cashOutAmount"
+                    type="number"
+                    placeholder="Enter Amount"
+                    class="input input-bordered bg-transparent rounded-3xl"
+                    required
+                  />
+                </div>
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text font-bold text-black"
+                      >Pin Number</span
+                    >
+                  </label>
+                  <input
+                    id="cashOutPin"
+                    type="password"
+                    placeholder="Enter Your Pin"
+                    class="input input-bordered bg-transparent rounded-3xl"
+                    required
+                  />
+                  <label class="label">
+                    <a
+                      href="#"
+                      class="label-text-alt link link-hover font-semibold ml-1 text-blue-800"
+                      >Forgot Pin Number?</a
+                    >
+                  </label>
+                </div>
+                <div class="form-control mt-6">
+                  <button
+                    id="cashOutButton"
+                    class="btn btn-primary font-black text-white"
+                  >
+                    Cash Out
+                  </button>
+                </div>
+              </form>
+            </div>
+            <!--*Cash Out  -->
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="./js/home.js"></script>
+    <script src="./js/features.js"></script>
+  </body>
+</html>
